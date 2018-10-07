@@ -107,7 +107,8 @@ for i in ipairs(source_list) do
 
  minetest.register_node("slope:edge_" .. name, {
  	description = desc .. "edge",
-wield_image = "none.png",
+wield_image = "color_hand" .. name .. ".png",
+		wield_scale = {x=2,y=1.5,z=0.2},
 inventory_image = "edge.png^[colorize:#"..colour..":70",
  	drawtype = "mesh",
  	mesh = "slope_test_quarter_round_onetexture.obj",
@@ -121,7 +122,8 @@ inventory_image = "edge.png^[colorize:#"..colour..":70",
 
 minetest.register_node("slope:edgecorner_" .. name, {
  	description = desc .. "edge",
-wield_image = "none.png",
+wield_image = "color_hand" .. name .. ".png",
+		wield_scale = {x=2,y=1.5,z=0.2},
 inventory_image = "edgecorner.png^[colorize:#"..colour..":70",
  	drawtype = "mesh",
  	mesh = "slope_test_quarter_round_corner_onetexture.obj",
@@ -135,7 +137,8 @@ inventory_image = "edgecorner.png^[colorize:#"..colour..":70",
 
 minetest.register_node("slope:slope_"..name, {
         description = desc.. " slope",
-wield_image = "none.png",
+wield_image = "color_hand" .. name .. ".png",
+		wield_scale = {x=2,y=1.5,z=0.2},
 inventory_image = "triangle.png^[colorize:#"..colour..":70",
         drawtype = "mesh",
         mesh = "slope_test_slope.obj",
@@ -153,7 +156,8 @@ inventory_image = "triangle.png^[colorize:#"..colour..":70",
 
     minetest.register_node("slope:ocorner_"..name, {
         description = desc.." slope (outer corner)",
-wield_image = "none.png",
+wield_image = "color_hand" .. name .. ".png",
+		wield_scale = {x=2,y=1.5,z=0.2},
 inventory_image = "cornera.png^[colorize:#"..colour..":70",
         drawtype = "mesh",
         mesh = "slope_test_ocorner.obj",
@@ -170,7 +174,8 @@ inventory_image = "cornera.png^[colorize:#"..colour..":70",
     })
     minetest.register_node("slope:icorner_"..name, {
         description = desc.." slope (inner corner)",
-wield_image = "none.png",
+wield_image = "color_hand" .. name .. ".png",
+		wield_scale = {x=2,y=1.5,z=0.2},
 inventory_image = "cornerb.png^[colorize:#"..colour..":70",
         drawtype = "mesh",
         mesh = "slope_test_icorner.obj",
@@ -188,7 +193,8 @@ inventory_image = "cornerb.png^[colorize:#"..colour..":70",
 
     minetest.register_node("slope:slopelong_"..name, {
         description = desc.." long slope",
-wield_image = "none.png",
+wield_image = "color_hand" .. name .. ".png",
+		wield_scale = {x=2,y=1.5,z=0.2},
 inventory_image = "long.png^[colorize:#"..colour..":70",
         drawtype = "mesh",
         mesh = "slope_test_slope_long.obj",
@@ -206,7 +212,8 @@ inventory_image = "long.png^[colorize:#"..colour..":70",
 
     minetest.register_node("slope:cylinder_"..name, {
         description = desc.." cylinder",
-wield_image = "none.png",
+wield_image = "color_hand" .. name .. ".png",
+		wield_scale = {x=2,y=1.5,z=0.2},
 inventory_image = "cylinder.png^[colorize:#"..colour..":70",
         drawtype = "mesh",
         mesh = "slope_test_cylinder.obj",
@@ -222,7 +229,8 @@ inventory_image = "cylinder.png^[colorize:#"..colour..":70",
 
     minetest.register_node("slope:cone_"..name, {
         description = desc.." cone",
-wield_image = "none.png",
+wield_image = "color_hand" .. name .. ".png",
+		wield_scale = {x=2,y=1.5,z=0.2},
 inventory_image = "cone.png^[colorize:#"..colour..":70",
         drawtype = "mesh",
         mesh = "slope_test_cone_onetexture.obj",
@@ -240,7 +248,8 @@ inventory_image = "cone.png^[colorize:#"..colour..":70",
 
     minetest.register_node("slope:sphere_"..name, {
         description = desc.." sphere",
-wield_image = "none.png",
+wield_image = "color_hand" .. name .. ".png",
+		wield_scale = {x=2,y=1.5,z=0.2},
 inventory_image = "sphere.png^[colorize:#"..colour..":70",
         drawtype = "mesh",
         mesh = "slope_test_sphere_onetexture.obj",

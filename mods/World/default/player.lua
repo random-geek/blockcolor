@@ -20,12 +20,12 @@ default.player_register_model("AnimatedHuman.obj", {
 	textures = {"character.png", },
 	animations = {
 		-- Standard animations.
-		stand     = { x=  0, y= 0, },
+		stand     = { x= 0, y=0, },
 		lay       = { x=0, y=0, },
-		walk      = { x=10, y=70, },
-		mine      = { x=80, y=120, },
+		walk      = { x=0, y=0, },
+		mine      = { x=0, y=0, },
 		walk_mine = { x=0, y=0, },
-		sit       = { x= 130, y=270, }, 
+		sit       = { x= 0, y=0, }, 
 	},
 })
 

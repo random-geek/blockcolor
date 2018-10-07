@@ -10,6 +10,8 @@ function stackslabs.register_top_slab(subname, recipeitem, groups, images, descr
  minetest.register_node(":stackslabs:top_slab" .. subname, {
 	description = description,
 	drawtype = "nodebox",
+wield_image = "color_hand" .. subname .. ".png",
+		wield_scale = {x=2,y=1.5,z=0.2},
 	tiles = images,
 	paramtype = "light",
 	sunlight_propogates = true,

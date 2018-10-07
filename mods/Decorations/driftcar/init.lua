@@ -22,7 +22,8 @@ for i in ipairs(source_list) do
 minetest.register_node("driftcar:driftcar" ..name, {
 	description = "Drift Car Nodebox" ..name,
 inventory_image = "cars.png^[colorize:#"..colour..":70",
-wield_image = "none.png",
+wield_image = "color_hand" .. name .. ".png",
+		wield_scale = {x=2,y=1.5,z=0.2},
 	tiles = { -- Top, base, right, left, front, back
 		"driftcar_top.png^[colorize:#"..colour..":70",
 		"driftcar_base.png^[colorize:#"..colour..":70",

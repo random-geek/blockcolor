@@ -7,7 +7,7 @@ fullpipe = {}
 
 function fullpipe.register_pipe_border(subname, recipeitem, groups, images, description, inventorys, sounds)
 	minetest.register_node("fullpipe:border_" .. subname, {
-	   wield_image = "none.png",
+	   wield_image = "color_hand" .. subname .. ".png",
 		wield_scale = {x=2,y=1.5,z=0.2},
       inventory_image = inventorys,
 		description = description,
@@ -33,8 +33,8 @@ end
 
 function fullpipe.register_pipe_block(subname, recipeitem, groups, images, description, inventorys, sounds)
 	minetest.register_node("fullpipe:block_" .. subname, {
-      wield_image = "none.png",
-	 	wield_scale = {x=2,y=1.5,z=0.2},
+      wield_image = "color_hand" .. subname .. ".png",
+		wield_scale = {x=2,y=1.5,z=0.2},
       inventory_image = inventorys,
 		description = description,
 		drawtype = "nodebox",
