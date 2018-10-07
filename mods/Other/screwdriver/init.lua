@@ -145,7 +145,8 @@ end
 minetest.register_tool("screwdriver:screwdriver", {
 	description = "Rotate Tool (left-click rotates face, right-click rotates axis)",
 	inventory_image = "rotate2.png",
-   wield_image ="none.png",
+   wield_image = "wrotate.png",
+		wield_scale = {x=1,y=1,z=0.5},
 	on_use = function(itemstack, user, pointed_thing)
 		screwdriver.handler(itemstack, user, pointed_thing, screwdriver.ROTATE_FACE, 200)
 		return itemstack

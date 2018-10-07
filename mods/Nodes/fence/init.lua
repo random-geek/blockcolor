@@ -25,7 +25,7 @@ for i in ipairs(source_list) do
 		description = desc .. " Fence ",
 		wield_image = "color_hand" .. name .. ".png",
       inventory_image = "fence.png^[colorize:#"..colour..":70",
-		wield_scale = {x=2,y=1.5,z=0.2},
+		 wield_scale = {x=1,y=1,z=0.5},
 		 tiles = {"color_white.png^[colorize:#"..colour..":70"},
 		 drawtype = "fencelike",
 	paramtype = "light",

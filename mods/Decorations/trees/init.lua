@@ -34,7 +34,7 @@ minetest.register_node("trees:big_" .. name, {
   	mesh = "tree.obj",
 visual_scale = 4,
 wield_image = "color_hand" .. name .. ".png",
-wield_scale = {x=2,y=1.5,z=0.2},
+wield_scale = {x=1,y=1,z=0.5},
 --  inventory_image = "treebig.png^[colorize:#"..colour..":70",
 
 tiles = {
@@ -71,7 +71,7 @@ minetest.register_node("trees:normal_" .. name, {
   	mesh = "tree.obj",
 visual_scale = 2,
 wield_image = "color_hand" .. name .. ".png",
-wield_scale = {x=2,y=1.5,z=0.2},
+wield_scale = {x=1,y=1,z=0.5},
 --  inventory_image = "treenormal.png^[colorize:#"..colour..":70",
 
 tiles = {
@@ -108,7 +108,7 @@ minetest.register_node("trees:small_" .. name, {
   	mesh = "tree.obj",
 visual_scale = 1,
 wield_image = "color_hand" .. name .. ".png",
-wield_scale = {x=2,y=1.5,z=0.2},
+wield_scale = {x=1,y=1,z=0.5},
 -- inventory_image = "treesmall.png^[colorize:#"..colour..":70",
 
 tiles = {

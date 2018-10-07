@@ -703,7 +703,7 @@ if enable_colored_metal_signs then
 			description = S("Sign (@1, metal)", color[2]),
  inventory_image = "signs.png^[colorize:#"..color[4]..":70",
 			 wield_image = "color_hand" .. color[1] .. ".png",
-		wield_scale = {x=2,y=1.5,z=0.2},
+		 wield_scale = {x=1,y=1,z=0.5},
 			node_placement_prediction = "",
 			paramtype = "light",
 			sunlight_propagates = true,

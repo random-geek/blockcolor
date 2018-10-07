@@ -23,7 +23,7 @@ minetest.register_node("glass:" .. name , {
 	tiles = {"whiteglass.png^[colorize:#"..colour..":70"},
    inventory_image = "windows.png^[colorize:#"..colour..":70",
    wield_image = "color_hand" .. name .. ".png",
-   wield_scale = {x=2,y=1.5,z=0.2},
+   wield_scale = {x=1,y=1,z=0.5},
 	paramtype = "light",
 	use_texture_alpha = true,
 	sunlight_propagates = true,

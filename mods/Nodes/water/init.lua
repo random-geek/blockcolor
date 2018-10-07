@@ -52,7 +52,7 @@ for i in ipairs(source_list) do
 		buildable_to = true,
 		is_ground_content = false,
 		wield_image = "color_hand" .. name .. ".png",
-		wield_scale = {x=2,y=1.5,z=0.2},
+		 wield_scale = {x=1,y=1,z=0.5},
       inventory_image = "waters.png^[colorize:#"..colour..":70",
 		drop = "",
 		drowning = 1,

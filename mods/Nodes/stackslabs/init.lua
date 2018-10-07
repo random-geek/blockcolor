@@ -11,7 +11,7 @@ function stackslabs.register_top_slab(subname, recipeitem, groups, images, descr
 	description = description,
 	drawtype = "nodebox",
 wield_image = "color_hand" .. subname .. ".png",
-		wield_scale = {x=2,y=1.5,z=0.2},
+		 wield_scale = {x=1,y=1,z=0.5},
 	tiles = images,
 	paramtype = "light",
 	sunlight_propogates = true,

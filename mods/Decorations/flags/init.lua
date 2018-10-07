@@ -31,7 +31,7 @@ minetest.register_node("flags:" ..name, {
 	drawtype = "torchlike",
 	visual_scale = 3.0,
 	 wield_image = "color_hand" .. name .. ".png",
-		wield_scale = {x=2,y=1.5,z=0.2},
+		 wield_scale = {x=1,y=1,z=0.5},
  inventory_image = "flag.png^[colorize:#"..colour..":70",
 	tiles = {"flags.png^[colorize:#"..colour..":70"},
 	use_texture_alpha = true,

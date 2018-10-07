@@ -54,7 +54,7 @@ local name = source_list[i][1]
 	  oddly_breakable_by_hand = 1,
 	  dig_immediate = 3,
      wield_image = "color_hand" .. name .. ".png",
-		wield_scale = {x=2,y=1.5,z=0.2},
+		 wield_scale = {x=1,y=1,z=0.5},
       inventory_image = "arc.png^[colorize:#"..colour..":70",
 
      on_place = function(itemstack, placer, pointed_thing)
@@ -129,7 +129,7 @@ local name = source_list[i][1]
 	  oddly_breakable_by_hand = 1,
 	  dig_immediate = 3,
 wield_image = "color_hand" .. name .. ".png",
-		wield_scale = {x=2,y=1.5,z=0.2},
+		 wield_scale = {x=1,y=1,z=0.5},
       inventory_image = "arcout.png^[colorize:#"..colour..":70",
 
 		on_place = function(itemstack, placer, pointed_thing)
@@ -222,7 +222,7 @@ wield_image = "color_hand" .. name .. ".png",
 	 oddly_breakable_by_hand = 1,
 	 dig_immediate = 3,
   wield_image = "color_hand" .. name .. ".png",
-		wield_scale = {x=2,y=1.5,z=0.2},
+		 wield_scale = {x=1,y=1,z=0.5},
   inventory_image = "arcin.png^[colorize:#"..colour..":70",
 
 		on_place = function(itemstack, placer, pointed_thing)

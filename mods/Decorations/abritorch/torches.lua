@@ -33,7 +33,7 @@ local enable_ceiling = true
 		description = desc.." Torch",
 		inventory_image = "torch.png^[colorize:#"..colour..":70",
 		wield_image = "color_hand" .. name .. ".png",
-		wield_scale = {x=2,y=1.5,z=0.2},
+		 wield_scale = {x=1,y=1,z=0.5},
 		liquids_pointable = false,
 		on_place = function(itemstack, placer, pointed_thing)
 			local above = pointed_thing.above
@@ -63,7 +63,7 @@ local enable_ceiling = true
 		description = desc.." Torch",
 		inventory_image = "torch.png^[colorize:#"..colour..":70",
 		wield_image = "color_hand" .. name .. ".png",
-		wield_scale = {x=2,y=1.5,z=0.2},
+		 wield_scale = {x=1,y=1,z=0.5},
 		drawtype = "mesh",
 		mesh = "torch_floor.obj",
 		tiles = {
@@ -88,7 +88,7 @@ local enable_ceiling = true
 	minetest.register_node("abritorch:wall_"..name, {
 		inventory_image = "torch.png^[colorize:#"..colour..":70",
 		wield_image = "color_hand" .. name .. ".png",
-		wield_scale = {x=2,y=1.5,z=0.2},
+		 wield_scale = {x=1,y=1,z=0.5},
 		drawtype = "mesh",
 		mesh = "torch_wall.obj",
 		tiles = {

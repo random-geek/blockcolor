@@ -13,7 +13,16 @@ default.gui_bg = "bgcolor[#080808BB;true]"
 default.gui_bg_img = "background[5,5;1,1;gui_formbg.png;true]"
 default.gui_slots = "listcolors[#00000069;#5A5A5A;#141318;#30434C;#FFF]"
 
+minetest.register_item(":", 
 
+{
+	type = "none",
+	wield_image = "wieldhand.png",	
+wield_scale = {x=1,y=1,z=0.5},
+}
+
+)
+		
 
 -- Load files
 local default_path = minetest.get_modpath("default")

@@ -42,7 +42,7 @@ castle_shields.register_shield = function(name, desc, background_color, foregrou
 		description = desc,
 		tiles = {tile_side, tile_side, tile_side, tile_side, "color_black.png", tile_front},
 	 wield_image = "color_hand" .. color .. ".png",
-		wield_scale = {x=2,y=1.5,z=0.2},
+		 wield_scale = {x=1,y=1,z=0.5},
   inventory_image = "shield"..mask..".png^[colorize:#"..colour..":70",
 		drawtype="nodebox",
 		paramtype2 = "facedir",
