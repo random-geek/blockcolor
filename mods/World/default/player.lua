@@ -14,21 +14,31 @@ function default.player_register_model(name, def)
 	models[name] = def 
 end
 
--- Blend Modify and Export b3d by Kroukuk
+-- License Model Player : CC0
+-- https://opengameart.org/content/animated-human-low-poly
+-- Model Player by Quaternius
+
+-- Modify and Export b3d by Kroukuk
 
 -- Default player appearance
-default.player_register_model("character2.b3d", {
+default.player_register_model("character.b3d", {
 	animation_speed = 60,
 	textures = {"character.png", },
 	animations = {
 
-		stand     = { x= 26, y= 266, },
-		lay       = { x=0, y=0, },
+--run: x=322 y=338
+--work: x=426 y=581
+
+		stand     = { x=26, y=266, },
+		lay       = { x=339, y=424, },
 		walk      = { x=295, y=320, },
-		mine      = { x=268, y=292, },
-		walk_mine = { x=0, y=0, },
-		sit       = { x= 0, y=0, }, 
-  jump      = { x= 0, y=24, }, 
+  	mine      = { x=268, y=292, },
+
+--walk_fast = { x=322, y=338, },
+--dog_mine  = { x=426, y=581, },
+--walk_mine = { x=0, y=0, },
+--sit       = { x= 0, y=0, }, 
+--jump      = { x= 0, y=24, }, 
 
 	},
 })
@@ -96,7 +106,7 @@ end
 -- Update appearance when the player joins
 minetest.register_on_joinplayer(function(player)
 	default.player_attached[player:get_player_name()] = false
-	default.player_set_model(player, "character2.b3d")
+	default.player_set_model(player, "character.b3d")
 	player:set_local_animation({x=0, y=0}, {x=0, y=0}, {x=0, y=0}, {x=0, y=0}, 0)
 
 	player:hud_set_hotbar_image("gui_hotbar.png")
