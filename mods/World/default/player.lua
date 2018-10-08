@@ -14,18 +14,22 @@ function default.player_register_model(name, def)
 	models[name] = def 
 end
 
+-- Blend Modify and Export b3d by Kroukuk
+
 -- Default player appearance
 default.player_register_model("character2.b3d", {
 	animation_speed = 60,
 	textures = {"character.png", },
 	animations = {
-		-- Standard animations.
-		 stand     = { x= 0, y= 0, },
+
+		stand     = { x= 26, y= 266, },
 		lay       = { x=0, y=0, },
-		walk      = { x=10, y=70, },
-		mine      = { x=80, y=120, },
+		walk      = { x=295, y=320, },
+		mine      = { x=268, y=292, },
 		walk_mine = { x=0, y=0, },
-		sit       = { x= 130, y=270, }, 
+		sit       = { x= 0, y=0, }, 
+  jump      = { x= 0, y=24, }, 
+
 	},
 })
 
