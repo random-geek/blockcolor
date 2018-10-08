@@ -167,7 +167,7 @@ if page == "furnitures" then
 .. "image_button_exit[3,0.5;1,1;signs.png;signs;]"
 .. "image_button_exit[4,0.5;1,1;beds.png;beds;]"
 .. "image_button_exit[5,0.5;1,1;flowers.png;flowers;]"
-.. "image_button_exit[6,0.5;1,1;cars.png;cars;]"
+.. "image_button_exit[6,0.5;1,1;flag.png;flags;]"
 .. "image_button_exit[7,0.5;1,1;computer.png;computers;]"
 .. "image_button_exit[0,2.5;1,1;desk.png;desks;]"
 .. "image_button_exit[1,2.5;1,1;bench.png;bench;]"
@@ -184,7 +184,7 @@ if page == "furnitures" then
 .. "image_button_exit[4,4.5;1,1;shieldcross.png;shieldcross;]"
 .. "image_button_exit[5,4.5;1,1;shieldslash.png;shieldslash;]"
 .. "image_button_exit[6,4.5;1,1;shieldchevron.png;shieldchevron;]"
-.. "image_button[7,4.5;1,1;droite.png;furnitures2;]"
+-- .. "image_button[7,4.5;1,1;droite.png;furnitures2;]"
 
  .. "image_button[0,6.5;1,1;gauche.png;main;]"
  .. "image_button_exit[1,6.5;1,1;rotate.png;rotate;]"
@@ -193,9 +193,9 @@ if page == "furnitures" then
 
 	end
 
--- furnitures page 2
+-- Cars 
 
-	if page == "furnitures2" then
+	if page == "vehicules" then
 
 		local inv = player:get_inventory() or nil
 
@@ -206,15 +206,10 @@ if page == "furnitures" then
 
 		 formspec = formspec
 
--- .. "image_button_exit[0,0.5;1,1;nctwoedge.png;nct;]" 
--- .. "label[0.1,1;Node-T]"
+ .. "image_button_exit[0,0.5;1,1;cars.png;cars;]"
+ .. "image_button_exit[1,0.5;1,1;surfboard.png;surfboard;]"
 
--- .. "image_button_exit[1,0.5;1,1;nccross.png;nccross;]"
--- .. "label[1.1,1;Cross]"
-
- .. "image_button_exit[0,0.5;1,1;flag.png;flags;]"
-
-.. "image_button[0,6.5;1,1;gauche.png;furnitures;]"
+.. "image_button[0,6.5;1,1;gauche.png;main;]"
 .. "image_button_exit[1,6.5;1,1;rotate.png;rotate;]"
 .. "image_button_exit[2,6.5;1,1;nones.png;none;]"
 
@@ -233,9 +228,47 @@ if page == "planets" then
 
 		 formspec = formspec
 
- .. "image_button_exit[2,0.5;1,1;mmars.png;mars;]"
+ .. "image_button_exit[0,0.5;1,1;mmars.png;mars;]"
  .. "image_button_exit[1,0.5;1,1;moon.png;moon;]"
- .. "image_button_exit[0,0.5;1,1;earth.png;earth;]"
+ .. "image_button_exit[2,0.5;1,1;earth.png;earth;]"
+
+ .. "image_button[0,6.5;1,1;gauche.png;main;]"
+
+.. ""
+
+	end
+
+if page == "animals" then
+
+		local inv = player:get_inventory() or nil
+
+		if not inv then
+			print ("NO INVENTORY FOUND")
+			return
+		end
+
+		 formspec = formspec
+
+ .. "image_button[0,6.5;1,1;gauche.png;main;]"
+
+.. ""
+
+	end
+
+if page == "trees" then
+
+		local inv = player:get_inventory() or nil
+
+		if not inv then
+			print ("NO INVENTORY FOUND")
+			return
+		end
+
+		 formspec = formspec
+
+ .. "image_button_exit[0,0.5;1,1;smalltrees.png;smalltrees;]"
+ .. "image_button_exit[1,0.5;1,1;normaltrees.png;normaltrees;]"
+ .. "image_button_exit[2,0.5;1,1;bigtrees.png;bigtrees;]"
 
  .. "image_button[0,6.5;1,1;gauche.png;main;]"
 
@@ -247,14 +280,14 @@ if page == "planets" then
 	if page == "main" then
 
 		-- buttons
-		local x, y = 2, 1
+		local x, y = 2, 0
 
 		for k, v in pairs(inventory_plus.buttons[player:get_player_name()]) do
 
 			formspec = formspec 
 
 .. "button[" .. x .. "," .. y .. ";4,2;" .. k .. ";" .. v .. "]"
-.. "button_exit[2,5;4,2;quit;Back to Game]"
+.. "button_exit[2,6;4,2;quit;Back to Game]"
 
 			x = x 
 y = y + 1
@@ -270,6 +303,9 @@ minetest.register_on_joinplayer(function(player)
 	inventory_plus.register_button(player,"nodes", "Build")
 inventory_plus.register_button(player,"furnitures", "Decorations")
 inventory_plus.register_button(player,"planets", "Planets")
+inventory_plus.register_button(player,"vehicules", "Vehicules")
+inventory_plus.register_button(player,"trees", "Trees")
+-- inventory_plus.register_button(player,"animals", "Animals")
 
 	minetest.after(1, function()
 
@@ -324,13 +360,29 @@ if fields.planets then
 		return
 	end
 
-if fields.furnitures2 then
+if fields.vehicules then
 
 		inventory_plus.set_inventory_formspec(player,
-			inventory_plus.get_formspec(player, "furnitures2"))
+			inventory_plus.get_formspec(player, "vehicules"))
 
 		return
 	end
+
+if fields.trees then
+
+		inventory_plus.set_inventory_formspec(player,
+			inventory_plus.get_formspec(player, "trees"))
+
+		return
+	end
+
+-- if fields.animals then
+
+--		inventory_plus.set_inventory_formspec(player,
+--			inventory_plus.get_formspec(player, "animals"))
+
+--		return
+--	end
 
 
 	-- creative

@@ -11,21 +11,21 @@ default.registered_player_models = { }
 local models = default.registered_player_models
 
 function default.player_register_model(name, def)
-	models[name] = def
+	models[name] = def 
 end
 
 -- Default player appearance
-default.player_register_model("AnimatedHuman.obj", {
+default.player_register_model("character2.b3d", {
 	animation_speed = 60,
 	textures = {"character.png", },
 	animations = {
 		-- Standard animations.
-		stand     = { x= 0, y=0, },
+		 stand     = { x= 0, y= 0, },
 		lay       = { x=0, y=0, },
-		walk      = { x=0, y=0, },
-		mine      = { x=0, y=0, },
+		walk      = { x=10, y=70, },
+		mine      = { x=80, y=120, },
 		walk_mine = { x=0, y=0, },
-		sit       = { x= 0, y=0, }, 
+		sit       = { x= 130, y=270, }, 
 	},
 })
 
@@ -92,7 +92,7 @@ end
 -- Update appearance when the player joins
 minetest.register_on_joinplayer(function(player)
 	default.player_attached[player:get_player_name()] = false
-	default.player_set_model(player, "AnimatedHuman.obj")
+	default.player_set_model(player, "character2.b3d")
 	player:set_local_animation({x=0, y=0}, {x=0, y=0}, {x=0, y=0}, {x=0, y=0}, 0)
 
 	player:hud_set_hotbar_image("gui_hotbar.png")

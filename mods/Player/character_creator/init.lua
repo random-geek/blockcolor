@@ -10,11 +10,11 @@ local skin_default = {
 	gender     = "Male",
 	height     = 4,
 	width      = 4,
- face     = "None Eyes",
+ face       = "None Eyes",
 	skin       = "White Skin",
 	tshirt     = "None T-Shirt",
  shoes      = "None Hair",
- pants     = "None Pants",
+ pants      = "None Pants",
 }
 
 local skins = character_creator.skins
