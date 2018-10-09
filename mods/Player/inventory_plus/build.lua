@@ -386,13 +386,13 @@ minetest.register_on_player_receive_fields(function(player, formname, fields)
 					
 				 player:get_inventory():set_list("main", {})
 
-minetest.register_privilege("water", {
-	description = "Protection Troll Waters",
+minetest.register_privilege("notroll", {
+	description = "Protection Troll for Water, Vehicules and Other",
 	give_to_singleplayer= false,
 })
 
-if minetest.check_player_privs(name, {water=true})==false then
-		minetest.chat_send_player(name,"You need the water privilege to use Water")
+if minetest.check_player_privs(name, {notroll=true})==false then
+		minetest.chat_send_player(name,"You need the notroll privilege to use Water (For Admin : /grant nameofplayer notroll)")
 else
 player:get_inventory():add_item('main', 'water:white_water_source')
 player:get_inventory():add_item('main', 'water:black_water_source')

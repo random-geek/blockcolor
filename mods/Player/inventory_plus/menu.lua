@@ -208,6 +208,7 @@ if page == "furnitures" then
 
  .. "image_button_exit[0,0.5;1,1;cars.png;cars;]"
  .. "image_button_exit[1,0.5;1,1;surfboard.png;surfboard;]"
+.. "image_button_exit[2,0.5;1,1;airboat_airboat_inv.png;airboat;]"
 
 .. "image_button[0,6.5;1,1;gauche.png;main;]"
 .. "image_button_exit[1,6.5;1,1;rotate.png;rotate;]"
