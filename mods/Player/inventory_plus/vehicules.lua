@@ -1,3 +1,55 @@
+-- HotairBalloon
+
+minetest.register_on_player_receive_fields(function(player, formname, fields)	
+		local name = player:get_player_name()	
+				if fields.hotairballoon then --main page		
+					
+				 player:get_inventory():set_list("main", {})
+
+if minetest.check_player_privs(name, {notroll=true})==false then
+		minetest.chat_send_player(name,"You need notroll privilege for use vehicules (For admin : /grant nameplayer notroll)")
+else
+
+player:get_inventory():add_item('main', 'hotairballoon:hotairwhite')
+player:get_inventory():add_item('main', 'hotairballoon:hotairblack')
+player:get_inventory():add_item('main', 'hotairballoon:hotairred')
+player:get_inventory():add_item('main', 'hotairballoon:hotairorange ')
+player:get_inventory():add_item('main', 'hotairballoon:hotairyellow')
+player:get_inventory():add_item('main', 'hotairballoon:hotairpink')
+player:get_inventory():add_item('main', 'hotairballoon:hotairgreen')
+player:get_inventory():add_item('main', 'hotairballoon:hotairblue')
+
+end 
+end
+end
+)
+
+-- Hovercraft
+
+minetest.register_on_player_receive_fields(function(player, formname, fields)	
+		local name = player:get_player_name()	
+				if fields.hovercraft then --main page		
+					
+				 player:get_inventory():set_list("main", {})
+
+if minetest.check_player_privs(name, {notroll=true})==false then
+		minetest.chat_send_player(name,"You need notroll privilege for use vehicules (For admin : /grant nameplayer notroll)")
+else
+
+player:get_inventory():add_item('main', 'hovercraft:hover_white')
+player:get_inventory():add_item('main', 'hovercraft:hover_black')
+player:get_inventory():add_item('main', 'hovercraft:hover_red')
+player:get_inventory():add_item('main', 'hovercraft:hover_orange')
+player:get_inventory():add_item('main', 'hovercraft:hover_yellow')
+player:get_inventory():add_item('main', 'hovercraft:hover_pink')
+player:get_inventory():add_item('main', 'hovercraft:hover_green')
+player:get_inventory():add_item('main', 'hovercraft:hover_blue')
+
+end 
+end
+end
+)
+
 -- Airboat
 
 minetest.register_on_player_receive_fields(function(player, formname, fields)	

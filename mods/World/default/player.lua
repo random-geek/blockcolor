@@ -36,8 +36,8 @@ default.player_register_model("character.b3d", {
 
 --walk_fast = { x=322, y=338, },
 --dog_mine  = { x=426, y=581, },
---walk_mine = { x=0, y=0, },
---sit       = { x= 0, y=0, }, 
+  walk_mine = { x=0, y=0, },
+  sit       = { x= 0, y=0, }, 
 --jump      = { x= 0, y=24, }, 
 
 	},
