@@ -211,6 +211,8 @@ if page == "furnitures" then
 .. "image_button_exit[2,0.5;1,1;airboat_airboat_inv.png;airboat;]"
 .. "image_button_exit[3,0.5;1,1;hovercraft_inv.png;hovercraft;]"
 .. "image_button_exit[4,0.5;1,1;hotair_inv.png;hotairballoon;]"
+.. "image_button_exit[5,0.5;1,1;cart.png;carts;]"
+.. "image_button_exit[6,0.5;1,1;carts_rail_straight_pwr.png;rails;]"
 
 .. "image_button[0,6.5;1,1;gauche.png;main;]"
 .. "image_button_exit[1,6.5;1,1;rotate.png;rotate;]"

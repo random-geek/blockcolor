@@ -386,14 +386,6 @@ minetest.register_on_player_receive_fields(function(player, formname, fields)
 					
 				 player:get_inventory():set_list("main", {})
 
-minetest.register_privilege("notroll", {
-	description = "Protection Troll for Water, Vehicules and Other",
-	give_to_singleplayer= false,
-})
-
-if minetest.check_player_privs(name, {notroll=true})==false then
-		minetest.chat_send_player(name,"You need the notroll privilege to use Water (For Admin : /grant nameofplayer notroll)")
-else
 player:get_inventory():add_item('main', 'water:white_water_source')
 player:get_inventory():add_item('main', 'water:black_water_source')
 player:get_inventory():add_item('main', 'water:red_water_source')
@@ -401,9 +393,7 @@ player:get_inventory():add_item('main', 'water:orange_water_source')
 player:get_inventory():add_item('main', 'water:yellow_water_source')
 player:get_inventory():add_item('main', 'water:pink_water_source')
 player:get_inventory():add_item('main', 'water:green_water_source')
-player:get_inventory():add_item('main', 'water:blue_water_source') 				
-
-	end					
+player:get_inventory():add_item('main', 'water:blue_water_source') 						
 
 end 	
 end
