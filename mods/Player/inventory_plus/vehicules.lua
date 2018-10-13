@@ -1,3 +1,24 @@
+-- Spaceship
+
+minetest.register_on_player_receive_fields(function(player, formname, fields)	
+		local name = player:get_player_name()	
+				if fields.spaceship then --main page		
+					
+				 player:get_inventory():set_list("main", {})
+
+player:get_inventory():add_item('main', 'spaceship:spaceshipwhite')
+player:get_inventory():add_item('main', 'spaceship:spaceshipblack')
+player:get_inventory():add_item('main', 'spaceship:spaceshipred')
+player:get_inventory():add_item('main', 'spaceship:spaceshiporange')
+player:get_inventory():add_item('main', 'spaceship:spaceshipyellow')
+player:get_inventory():add_item('main', 'spaceship:spaceshippink')
+player:get_inventory():add_item('main', 'spaceship:spaceshipgreen')
+player:get_inventory():add_item('main', 'spaceship:spaceshipblue')
+
+end 
+end
+)
+
 -- Rails (Carts)
 
 minetest.register_on_player_receive_fields(function(player, formname, fields)	
