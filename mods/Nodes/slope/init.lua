@@ -105,6 +105,27 @@ for i in ipairs(source_list) do
 	local green = source_list[i][5]
 	local blue = source_list[i][6]	
 
+-- 	drawtype = "glasslike",
+
+-- Glass
+
+minetest.register_node("slope:edge_glass_" .. name, {
+ 	description = desc .. "edge",
+ wield_image = "color_hand" .. name .. ".png",
+	wield_scale = {x=1,y=1,z=0.5},
+ inventory_image = "edge.png^[colorize:#"..colour..":70",
+ 	drawtype = "mesh",
+ 	mesh = "slope_test_quarter_round_onetexture.obj",
+ 	tiles = {"whiteglass.png^[colorize:#"..colour..":70"},
+ 	paramtype = "light",
+ 	paramtype2 = "facedir",
+ 	groups = {cracky=3, oddly_breakable_by_hand=2},
+	sounds = default.node_sound_stone_defaults(),
+ 	on_place = minetest.rotate_node,
+ })
+  
+-- Normal 
+
  minetest.register_node("slope:edge_" .. name, {
  	description = desc .. "edge",
 wield_image = "color_hand" .. name .. ".png",
