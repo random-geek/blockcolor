@@ -67,7 +67,7 @@ stepheight = 0.6,
 
 	mobs:spawn({
 		name = "mobs_animal:pig",
-		nodes = {"color:green"},
+		nodes = {"comboblock:slab_green_onc_slab_orange"},
 		neighbors = {"group:grass"},
 		min_light = 14,
 		interval = 60,
