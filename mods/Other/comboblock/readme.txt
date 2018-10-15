@@ -1,6 +1,9 @@
-comboblock
+Comboblock Fork for Blockcolor (Mrchiantos)
+Comboblock Original (pithydon)
 
-license:
+License (Model) : CcO with Help MinetestVideo, Thank man.
+
+License (source code) :
 =======================================================================
 This is free and unencumbered software released into the public domain.
 
