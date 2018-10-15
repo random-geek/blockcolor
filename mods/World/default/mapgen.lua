@@ -4,7 +4,7 @@
 
 minetest.register_alias("mapgen_stone", "color:black")
 minetest.register_alias("mapgen_dirt", "color:orange")
-minetest.register_alias("mapgen_dirt_with_grass", "color:green")
+minetest.register_alias("mapgen_dirt_with_grass", "comboblock:slab_green_onc_slab_orange")
 minetest.register_alias("mapgen_sand", "color:yellow")
 minetest.register_alias("mapgen_water_source", "water:blue_water_source")
 minetest.register_alias("mapgen_river_water_source", "water:blue_water_source")
@@ -12,7 +12,7 @@ minetest.register_alias("mapgen_lava_source", "water:red_water_source")
 minetest.register_alias("mapgen_gravel", "color:black")
 minetest.register_alias("mapgen_desert_stone", "color:black")
 minetest.register_alias("mapgen_desert_sand", "color;yellow")
-minetest.register_alias("mapgen_dirt_with_snow", "color:white")
+minetest.register_alias("mapgen_dirt_with_snow", "comboblock:slab_white_onc_slab_orange")
 minetest.register_alias("mapgen_snowblock", "color:white")
 minetest.register_alias("mapgen_snow", "carpet:white")
 minetest.register_alias("mapgen_ice", "color:blue")
@@ -51,7 +51,7 @@ function default.register_biomes(upper_limit)
 	minetest.register_biome({
 		name = "white",
 		node_dust = "color:white",
-		node_top = "color:white",
+		node_top = "comboblock:slab_white_onc_slab_orange",
 		depth_top = 1,
 		node_filler = "color:orange",
 		depth_filler = 1,
@@ -93,7 +93,7 @@ function default.register_biomes(upper_limit)
 	minetest.register_biome({
 		name = "green",
 		--node_dust = "",
-		node_top = "color:green",
+		node_top = "comboblock:slab_green_onc_slab_orange",
 		depth_top = 1,
 		node_filler = "color:orange",
 		depth_filler = 1,
