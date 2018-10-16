@@ -184,7 +184,7 @@ function default.register_decorations()
 
 	minetest.register_decoration({
 		deco_type = "simple",
-		place_on = {"color:green"},
+		place_on = {"comboblock:slab_green_onc_slab_orange"},
 		 		sidelen = 16,
 		noise_params = {
 			offset = 0,
@@ -203,7 +203,7 @@ function default.register_decorations()
 	
 	 minetest.register_decoration({
 		deco_type = "simple",
-		place_on = {"color:green"},
+		place_on = {"comboblock:slab_green_onc_slab_orange"},
 		 		sidelen = 16,
 		noise_params = {
 			offset = 0,
@@ -222,7 +222,7 @@ function default.register_decorations()
 
 	 minetest.register_decoration({
 		deco_type = "simple",
-		place_on = {"color:green"},
+		place_on = {"comboblock:slab_green_onc_slab_orange"},
 		 		sidelen = 16,
 		noise_params = {
 			offset = 0,
@@ -243,7 +243,7 @@ function default.register_decorations()
 
 minetest.register_decoration({
 		deco_type = "simple",
-		place_on = {"color:white"},
+		place_on = {"comboblock:slab_white_onc_slab_orange"},
 		 		sidelen = 16,
 		noise_params = {
 			offset = 0,
@@ -262,7 +262,7 @@ minetest.register_decoration({
 	
 	 minetest.register_decoration({
 		deco_type = "simple",
-		place_on = {"color:white"},
+		place_on = {"comboblock:slab_white_onc_slab_orange"},
 		 		sidelen = 16,
 		noise_params = {
 			offset = 0,
