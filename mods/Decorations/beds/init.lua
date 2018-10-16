@@ -91,16 +91,26 @@ inventory_image = "beds.png^[colorize:#".. colour2 .. ":70",
 	})
 	
 	minetest.register_node("beds:bed_top_"..colour, {
-		drawtype = "mesh",
-		tiles = {"beds_bed1.png^[colorize:#"..colour2..":70"},
+		drawtype = "nodebox",
+		tiles = {"beds_bed_top_top.png^[colorize:#"..colour2..":70", "color_orange.png",  "color_orange.png",  "color_orange.png",  "color_orange.png",  "color_orange.png"},
 		paramtype = "light",
 		paramtype2 = "facedir",
-  wield_image = "color_hand" .. colour .. ".png",
-		wield_scale = {x=1,y=1,z=0.5},
+wield_image = "color_hand" .. colour .. ".png",
+		 wield_scale = {x=1,y=1,z=0.5},
 		groups = {snappy=1,choppy=2,oddly_breakable_by_hand=2,flammable=3},
 		sounds = default.node_sound_wood_defaults(),
-		mesh = "Bed1.obj",
-
+		node_box = {
+		type = "fixed",
+			fixed = {
+						-- bed
+						{-0.5, -0.25, -0.5, 0.5, 0, 0.5},
+						{-0.4375, 0, 0.05, 0.4375, 0.10, 0.45},
+						
+						-- legs
+				{-0.4, -0.5, 0.4, -0.5, -0.25, 0.5},
+				{0.5, -0.25, 0.5, 0.4, -0.5, 0.4},
+					}
+		},
 		selection_box = {
 			type = "fixed",
 			fixed = {
