@@ -56,6 +56,23 @@ for k,v1 in pairs(combostair.index) do
 				paramtype2 = "facedir",
 				drawtype = "mesh",
      mesh = "stair.obj",
+
+     selection_box = {
+			  type = "fixed",
+			  fixed = {
+			   	{-0.5, -0.5, -0.5, 0.5, 0, 0.5},
+			   	{-0.5, 0, 0, 0.5, 0.5, 0.5},
+		           	},
+		           },
+
+		   collision_box = {
+			  type = "fixed",
+			  fixed = {
+				  {-0.5, -0.5, -0.5, 0.5, 0, 0.5},
+				  {-0.5, 0, 0, 0.5, 0.5, 0.5},
+			          },
+		          },
+
 				sounds = v1_def.sounds,
 				groups = v1_groups,
 				drop = v1,
