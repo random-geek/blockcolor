@@ -14,13 +14,26 @@ Blockcolor License Gpl 2.1 for code and Cc By SA 3.0 for medias.
 
 * BlockColor Game : MrChiantos 
 
-* Player Panda Model : AspireMint
+* Animal Model : AspireMint
 * Ships Spawn Mod : SokoMine
-* Furnitures Mod : Gerold55
-* Slope and Extras (Merge) : Nigel 
+* Furnitures Mod : Gerold55
+* Slope Simple : Nigel
+* Awards : Ruben
+* SurfBoard : Archfan7411
+* Airboat : Paramat
 * DriftCar : Paramat
-* 16px Textures : Peak
-
+* Spaceship : Paramat (Code) & SpaceShip'Model (Viktor Hahn )
+* Textures 16px : Peak (Since 1.46.4b)
+* Trampoline : hkzorman
+* Mobs mod : TenPlus1
+* Player Model : Quaternius (Human Low Poly / Since 1.53)
+* Player Model b3d : Kroukuk
+* Trees : Kenney.nl (Since 1.53)
+* Hdb Model (Homedecor) : Vanessa
+* Hovercraft : Stuart Jones 
+* HotAirBallons : Me Me and Me // mbb (Flying Carpet - Wuzzy)
+* ComboBlock : Pithydon
+* ComboBlock & ComboStair Model : Nathan (MinetestVideo) 
 
 ### Else Problem with Licenses or Forbidden Names, Send me a Mp to Forum Minetest.net.
 
