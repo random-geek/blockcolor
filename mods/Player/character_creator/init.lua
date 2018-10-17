@@ -1,6 +1,6 @@
 character_creator = {}
 character_creator.skins = dofile(minetest.get_modpath("character_creator") .. "/skins.lua")
-
+		
 local skinsdb
 if minetest.get_modpath("skinsdb") and minetest.global_exists("skins") then
 	skinsdb = skins
@@ -10,11 +10,11 @@ local skin_default = {
 	gender     = "Male",
 	height     = 4,
 	width      = 4,
- face       = "None Eyes",
-	skin       = "White Skin",
-	tshirt     = "None T-Shirt",
- shoes      = "None Hair",
- pants      = "None Pants",
+ face       = "eyesblack.png",
+	skin       = "skinwhite.png",
+	tshirt     = "shirtwhite.png",
+ shoes      = "hairblack.png",
+ pants      = "pantsblue.png",
 }
 
 local skins = character_creator.skins
@@ -43,48 +43,49 @@ end)
 local skin_indexes = {}
 
 local function show_formspec(player)
-	local indexes = skin_indexes[player] 
+local indexes = skin_indexes[player] 
 
-		 local formspec = "size[8,7.5]"
-		.. default.gui_bg
-		.. default.gui_bg_img
-		.. ""
+local formspec = "size[8,7.5]"
+
+.. default.gui_bg
+.. default.gui_bg_img
+.. ""
 
       -- Skin
 
-		.. "button[3.3,1;2,1;skin;" .. skins_array.skin[indexes.skin] .. "]"
-      .. "image_button[1.0,1;2,1;gauche.png;skin_back;>>]"
-      .. "image_button[5.6,1;2,1;droite.png;skin_next;>>]"
+.. "image_button[3.5,1;1,1;".. skins_array.skin[indexes.skin]..";skin;i]" 
+.. "image_button[1.5,1;1,1;gauche.png;skin_back;<<]"
+.. "image_button[5.5,1;1,1;droite.png;skin_next;>>]"
 
 		-- Eyes
 
-		.. "button[3.3,2;2,1;face;" .. skins_array.face[indexes.face] .. "]"
-	    .. "image_button[1.0,2;2,1;gauche.png;face_back;>>]"
-      .. "image_button[5.6,2;2,1;droite.png;face_next;>>]"
+.. "image_button[3.5,2;1,1;".. skins_array.face[indexes.face]..";face;i]" 
+.. "image_button[1.5,2;1,1;gauche.png;face_back;<<]"
+.. "image_button[5.5,2;1,1;droite.png;face_next;>>]"
 
 		-- T-Shirt
 
-		.. "button[3.3,3;2,1;tshirt;" .. skins_array.tshirt[indexes.tshirt] .. "]"
-	    .. "image_button[1.0,3;2,1;gauche.png;tshirt_back;>>]"
-      .. "image_button[5.6,3;2,1;droite.png;tshirt_next;>>]"
+.. "image_button[3.5,3;1,1;".. skins_array.tshirt[indexes.tshirt]..";tshirt;i]" 
+.. "image_button[1.5,3;1,1;gauche.png;tshirt_back;<<]"
+.. "image_button[5.5,3;1,1;droite.png;tshirt_next;>>]"
 
     	-- Pants
 
-		.. "button[3.3,4;2,1;pants;" .. skins_array.pants[indexes.pants] .. "]"
-	    .. "image_button[1.0,4;2,1;gauche.png;pants_back;>>]"
-      .. "image_button[5.6,4;2,1;droite.png;pants_next;>>]"
+.. "image_button[3.5,4;1,1;".. skins_array.pants[indexes.pants]..";pants;i]" 
+.. "image_button[1.5,4;1,1;gauche.png;pants_back;<<]"
+.. "image_button[5.5,4;1,1;droite.png;pants_next;>>]"
 
 		-- Shoes
 
-		.. "button[3.3,5;2,1;shoes;" .. skins_array.shoes[indexes.shoes] .. "]"
-    .. "image_button[1.0,5;2,1;gauche.png;shoes_back;>>]"
-      .. "image_button[5.6,5;2,1;droite.png;shoes_next;>>]"
+.. "image_button[3.5,5;1,1;".. skins_array.shoes[indexes.shoes]..";shoes;i]" 
+.. "image_button[1.5,5;1,1;gauche.png;shoes_back;<<]"
+.. "image_button[5.5,5;1,1;droite.png;shoes_next;>>]"
 
 		-- Done
 
-		.. "button_exit[1.0,6.5;2,1;main;Back to Game]"
+.. "button_exit[1.0,6.5;2,1;main;Back to Game]"
 
-	minetest.show_formspec(player:get_player_name(), "character_creator", formspec)
+ minetest.show_formspec(player:get_player_name(), "character_creator", formspec)
 end
 
 local function load_skin(player)
@@ -373,6 +374,6 @@ elseif minetest.global_exists("inventory_plus") then
 	minetest.register_on_player_receive_fields(function(player, _, fields)
 		if fields.character_creator then
 			show_formspec(player)
-		end
-	end)
-end
+		 end
+	 end)
+ end

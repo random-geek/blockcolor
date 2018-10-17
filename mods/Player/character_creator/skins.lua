@@ -2,64 +2,60 @@ return {
 
 	skin = {
 
-	["White Skin"] = "cc_skin_white.png",
-	["Black Skin"] = "cc_skin_black.png",
+	["skinwhite.png"] = "cc_skin_white.png",
+	["skinblack.png"] = "cc_skin_black.png",
 
 	}, 	
 
 face = {
 
-["None Eyes"] = "none.png",
-["White Eyes"] = "eyes_white.png",
-["Black Eyes"] = "eyes_black.png",
-["Red Eyes"] = "eyes_red.png",
-["Blue Eyes"] = "eyes_blue.png",
-["Yellow Eyes"] = "eyes_yellow.png",
-["Orange Eyes"] = "eyes_orange.png",
-["Green Eyes"] = "eyes_green.png",
-["Pink Eyes"] = "eyes_pink.png",
+["eyeswhite.png"] = "eyes_white.png",
+["eyesblack.png"] = "eyes_black.png",
+["eyesred.png"] = "eyes_red.png",
+["eyesblue.png"] = "eyes_blue.png",
+["eyesyellow.png"] = "eyes_yellow.png",
+["eyesorange.png"] = "eyes_orange.png",
+["eyesgreen.png"] = "eyes_green.png",
+["eyespink.png"] = "eyes_pink.png",
 
 	},
 
 tshirt = {
 
-["None T-Shirt"] = "none.png",
-["White T-Shirt"] = "shirt_white.png",
-["Black T-Shirt"] = "shirt_black.png",
-["Red T-Shirt"] = "shirt_red.png",
-["Blue T-Shirt"] = "shirt_blue.png",
-["Yellow T-Shirt"] = "shirt_yellow.png",
-["Orange T-Shirt"] = "shirt_orange.png",
-["Green T-Shirt"] = "shirt_green.png",
-["Pink T-Shirt"] = "shirt_pink.png",
+["shirtblack.png"] = "shirt_black.png",
+["shirtblue.png"] = "shirt_blue.png",
+["shirtgreen.png"] = "shirt_green.png",
+["shirtwhite.png"] = "shirt_white.png",
+["shirtorange.png"] = "shirt_orange.png",
+["shirtred.png"] = "shirt_red.png",
+["shirtyellow.png"] = "shirt_yellow.png",
+["shirtpink.png"] = "shirt_pink.png",
 
 	},
 
 pants = {
 
-["None Pants"] = "none.png",
-["White Pants"] = "pants_white.png",
-["Black Pants"] = "pants_black.png",
-["Red Pants"] = "pants_red.png",
-["Blue Pants"] = "pants_blue.png",
-["Yellow Pants"] = "pants_yellow.png",
-["Orange Pants"] = "pants_orange.png",
-["Green Pants"] = "pants_green.png",
-["Pink Pants"] = "pants_pink.png",
+["pantswhite.png"] = "pants_white.png",
+["pantsblack.png"] = "pants_black.png",
+["pantsred.png"] = "pants_red.png",
+["pantsblue.png"] = "pants_blue.png",
+["pantsyellow.png"] = "pants_yellow.png",
+["pantsorange.png"] = "pants_orange.png",
+["pantsgreen.png"] = "pants_green.png",
+["pantspink.png"] = "pants_pink.png",
 
 	},
 
 shoes = {
 
-["None Hair"] = "none.png",
-["White Hair"] = "hair_white.png",
-["Black Hair"] = "hair_black.png",
-["Red Hair"] = "hair_red.png",
-["Blue Hair"] = "hair_blue.png",
-["Yellow Hair"] = "hair_yellow.png",
-["Orange Hair"] = "hair_orange.png",
-["Green Hair"] = "hair_green.png",
-["Pink Hair"] = "hair_pink.png",
+["hairwhite.png"] = "hair_white.png",
+["hairblack.png"] = "hair_black.png",
+["hairred.png"] = "hair_red.png",
+["hairblue.png"] = "hair_blue.png",
+["hairyellow.png"] = "hair_yellow.png",
+["hairorange.png"] = "hair_orange.png",
+["hairgreen.png"] = "hair_green.png",
+["hairpink.png"] = "hair_pink.png",
 
 	},
 	

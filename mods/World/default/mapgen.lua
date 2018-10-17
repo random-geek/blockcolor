@@ -50,7 +50,6 @@ function default.register_biomes(upper_limit)
 
 	minetest.register_biome({
 		name = "white",
-		node_dust = "color:white",
 		node_top = "comboblock:slab_white_onc_slab_orange",
 		depth_top = 1,
 		node_filler = "color:orange",
