@@ -51,35 +51,35 @@ local formspec = "size[8,7.5]"
 .. default.gui_bg_img
 .. ""
 
-      -- Skin
+      -- Skin 
 
-.. "image_button[3.5,1;1,1;".. skins_array.skin[indexes.skin]..";skin;i]" 
-.. "image_button[1.5,1;1,1;gauche.png;skin_back;<<]"
-.. "image_button[5.5,1;1,1;droite.png;skin_next;>>]"
+.. "image_button[3.5,1;1,1;".. skins_array.skin[indexes.skin]..";skin;]" 
+.. "image_button[1.5,1;1,1;gauche.png;skin_back;]"
+.. "image_button[5.5,1;1,1;droite.png;skin_next;]"
 
 		-- Eyes
 
-.. "image_button[3.5,2;1,1;".. skins_array.face[indexes.face]..";face;i]" 
-.. "image_button[1.5,2;1,1;gauche.png;face_back;<<]"
-.. "image_button[5.5,2;1,1;droite.png;face_next;>>]"
+.. "image_button[3.5,2;1,1;".. skins_array.face[indexes.face]..";face;]" 
+.. "image_button[1.5,2;1,1;gauche.png;face_back;]"
+.. "image_button[5.5,2;1,1;droite.png;face_next;]"
 
 		-- T-Shirt
 
-.. "image_button[3.5,3;1,1;".. skins_array.tshirt[indexes.tshirt]..";tshirt;i]" 
-.. "image_button[1.5,3;1,1;gauche.png;tshirt_back;<<]"
-.. "image_button[5.5,3;1,1;droite.png;tshirt_next;>>]"
+.. "image_button[3.5,3;1,1;".. skins_array.tshirt[indexes.tshirt]..";tshirt;]" 
+.. "image_button[1.5,3;1,1;gauche.png;tshirt_back;]"
+.. "image_button[5.5,3;1,1;droite.png;tshirt_next;]"
 
     	-- Pants
 
-.. "image_button[3.5,4;1,1;".. skins_array.pants[indexes.pants]..";pants;i]" 
-.. "image_button[1.5,4;1,1;gauche.png;pants_back;<<]"
-.. "image_button[5.5,4;1,1;droite.png;pants_next;>>]"
+.. "image_button[3.5,4;1,1;".. skins_array.pants[indexes.pants]..";pants;]" 
+.. "image_button[1.5,4;1,1;gauche.png;pants_back;]"
+.. "image_button[5.5,4;1,1;droite.png;pants_next;]"
 
 		-- Shoes
 
-.. "image_button[3.5,5;1,1;".. skins_array.shoes[indexes.shoes]..";shoes;i]" 
-.. "image_button[1.5,5;1,1;gauche.png;shoes_back;<<]"
-.. "image_button[5.5,5;1,1;droite.png;shoes_next;>>]"
+.. "image_button[3.5,5;1,1;".. skins_array.shoes[indexes.shoes]..";shoes;]" 
+.. "image_button[1.5,5;1,1;gauche.png;shoes_back;]"
+.. "image_button[5.5,5;1,1;droite.png;shoes_next;]"
 
 		-- Done
 
