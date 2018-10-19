@@ -4,7 +4,7 @@ local S = mobs.intllib
 
 -- Panda by AspireMint (CC BY-SA 3.0)
 
-mobs:register_mob("mobs_animal:alien", {
+mobs:register_mob("mobs_animal:babyalien", {
 stepheight = 0.6,
 	type = "animal",
 	passive = true,
@@ -66,7 +66,7 @@ stepheight = 0.6,
 })
 
 	mobs:spawn({
-		name = "mobs_animal:alien",
+		name = "mobs_animal:babyalien",
 		nodes = {"color:red"},
 		neighbors = {"group:grass"},
 		min_light = 14,
@@ -77,4 +77,4 @@ stepheight = 0.6,
 		day_toggle = true,
 	})
 
-mobs:register_egg("mobs_animal:alien", S("Alien"), "color_red.png", 1)
+mobs:register_egg("mobs_animal:babyalien", S("BabyAlien"), "color_green.png", 1)

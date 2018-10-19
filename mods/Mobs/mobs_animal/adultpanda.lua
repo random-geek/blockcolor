@@ -2,9 +2,9 @@
 local S = mobs.intllib
 
 
--- Panda by AspireMint (CC BY-SA 3.0)
+-- Model by AspireMint (CC BY-SA 3.0)
 
-mobs:register_mob("mobs_animal:panda", {
+mobs:register_mob("mobs_animal:adultpanda", {
 stepheight = 0.6,
 	type = "animal",
 	passive = true,
@@ -17,9 +17,10 @@ stepheight = 0.6,
 	hp_min = 10,
 	hp_max = 24,
 	armor = 200,
-	collisionbox = {-0.4, -0.45, -0.4, 0.4, 0.45, 0.4},
+	collisionbox = {1, -1, -1, 1, 1, 1},
 	visual = "mesh",
-	mesh = "mobs_baby.b3d",
+ visual_size = {x=2, y=2, z=2},
+	mesh = "mobs_adult.b3d",
 	textures = {
 		{"mobs_panda.png"},
 	},
@@ -41,22 +42,24 @@ stepheight = 0.6,
 	fear_height = 6,
 	animation = {
 		speed_normal = 15,
-		stand_start = 130,
-		stand_end = 270,
+		stand_start = 390,
+		stand_end = 450,
 		stand1_start = 0,
 		stand1_end = 0,
 		stand2_start = 1,
 		stand2_end = 1,
 		stand3_start = 2,
 		stand3_end = 2,
-		walk_start = 10,
-		walk_end = 70,
+		walk_start = 280,
+		walk_end = 340,
 		run_start = 10,
 		run_end = 70,
-		punch_start = 80,
-		punch_end = 120,
+		punch_start = 390,
+		punch_end = 450,
 		-- 0 = rest, 1 = hiding (covers eyes), 2 = surprised
 	},
+
+
 	on_rightclick = function(self, clicker)
 
 		if mobs:feed_tame(self, clicker, 20, true, true) then return end
@@ -66,7 +69,7 @@ stepheight = 0.6,
 })
 
 	mobs:spawn({
-		name = "mobs_animal:panda",
+		name = "mobs_animal:adultpanda",
 		nodes = {"comboblock:slab_green_onc_slab_orange"},
 		neighbors = {"group:grass"},
 		min_light = 14,
@@ -77,4 +80,4 @@ stepheight = 0.6,
 		day_toggle = true,
 	})
 
-mobs:register_egg("mobs_animal:panda", S("Panda"), "color_green.png", 1)
+mobs:register_egg("mobs_animal:adultpanda", S("AdultPanda"), "color_white.png", 1)

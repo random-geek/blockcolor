@@ -147,6 +147,25 @@ inventory_plus.get_formspec = function(player, page)
 
 	end
 
+	if page == "animals" then
+
+		local inv = player:get_inventory() or nil
+
+		if not inv then
+			print ("NO INVENTORY FOUND")
+			return
+		end
+
+		 formspec = formspec
+
+
+.. "image_button_exit[0,0.5;1,1;mobs_chicken_egg_overlay.png;panda;]"
+ 
+.. "image_button[0,6.5;1,1;gauche.png;nodes;]"
+
+.. ""
+
+	end
 
 -- furnitures page
 
@@ -244,23 +263,6 @@ if page == "planets" then
 
 	end
 
-if page == "animals" then
-
-		local inv = player:get_inventory() or nil
-
-		if not inv then
-			print ("NO INVENTORY FOUND")
-			return
-		end
-
-		 formspec = formspec
-
- .. "image_button[0,6.5;1,1;gauche.png;main;]"
-
-.. ""
-
-	end
-
 if page == "trees" then
 
 		local inv = player:get_inventory() or nil
@@ -293,6 +295,10 @@ if page == "trees" then
 			formspec = formspec 
 
 .. "button[" .. x .. "," .. y .. ";4,2;" .. k .. ";" .. v .. "]"
+
+.. "button[2,5;2,2;nodes;Build]"
+.. "button[4,5;2,2;furnitures;Decorations]"
+
 .. "button_exit[2,6;4,2;quit;Back to Game]"
 
 			x = x 
@@ -306,12 +312,10 @@ end
 -- register_on_joinplayer
 minetest.register_on_joinplayer(function(player)
 
-	inventory_plus.register_button(player,"nodes", "Build")
-inventory_plus.register_button(player,"furnitures", "Decorations")
 inventory_plus.register_button(player,"planets", "Planets")
 inventory_plus.register_button(player,"vehicules", "Vehicules")
 inventory_plus.register_button(player,"trees", "Trees")
--- inventory_plus.register_button(player,"animals", "Animals")
+inventory_plus.register_button(player,"animals", "Animals")
 
 	minetest.after(1, function()
 
@@ -382,13 +386,13 @@ if fields.trees then
 		return
 	end
 
--- if fields.animals then
+if fields.animals then
 
---		inventory_plus.set_inventory_formspec(player,
---			inventory_plus.get_formspec(player, "animals"))
+inventory_plus.set_inventory_formspec(player,
+inventory_plus.get_formspec(player, "animals"))
 
---		return
---	end
+return
+end
 
 
 	-- creative
