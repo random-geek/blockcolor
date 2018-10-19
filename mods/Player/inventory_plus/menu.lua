@@ -161,7 +161,7 @@ inventory_plus.get_formspec = function(player, page)
 
 .. "image_button_exit[0,0.5;1,1;mobs_chicken_egg_overlay.png;panda;]"
  
-.. "image_button[0,6.5;1,1;gauche.png;nodes;]"
+.. "image_button[0,6.5;1,1;gauche.png;main;]"
 
 .. ""
 
