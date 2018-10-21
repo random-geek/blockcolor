@@ -477,8 +477,8 @@ wield_image = "color_hand" .. name .. ".png",
 inventory_image = "doors.png^[colorize:#"..colour..":70",
 		groups = {cracky=3},
 		sounds = default.node_sound_glass_defaults(),
-		sound_open = "doors_glass_door_open",
-		sound_close = "doors_glass_door_close",
+		sound_open = "doors_door_open",
+		sound_close = "doors_door_close",
 		
 })
 

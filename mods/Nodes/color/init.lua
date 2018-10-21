@@ -34,7 +34,6 @@ for i in ipairs(source_list) do
 		tiles = {"color_white.png^[colorize:#"..colour..":70"},
 		wield_image = "color_hand" .. name .. ".png",
 		wield_scale = {x=1,y=1,z=0.5},
- 
 		is_ground_content = true,
 		groups = {snappy = 2, choppy = 2, wool = 2},
 		sounds = default.node_sound_defaults(),

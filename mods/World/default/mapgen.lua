@@ -2,21 +2,35 @@
 -- Aliases for map generators
 --
 
-minetest.register_alias("mapgen_stone", "color:black")
-minetest.register_alias("mapgen_dirt", "color:orange")
-minetest.register_alias("mapgen_dirt_with_grass", "comboblock:slab_green_onc_slab_orange")
-minetest.register_alias("mapgen_sand", "color:yellow")
-minetest.register_alias("mapgen_water_source", "water:blue_water_source")
-minetest.register_alias("mapgen_river_water_source", "water:blue_water_source")
-minetest.register_alias("mapgen_lava_source", "water:red_water_source")
-minetest.register_alias("mapgen_gravel", "color:black")
-minetest.register_alias("mapgen_desert_stone", "color:black")
-minetest.register_alias("mapgen_desert_sand", "color;yellow")
-minetest.register_alias("mapgen_dirt_with_snow", "comboblock:slab_white_onc_slab_orange")
-minetest.register_alias("mapgen_snowblock", "color:white")
-minetest.register_alias("mapgen_snow", "carpet:white")
-minetest.register_alias("mapgen_ice", "color:blue")
-minetest.register_alias("mapgen_sandstone", "color:orange")
+minetest.register_alias("mapgen_stone","comboblock:slab_black_onc_slab_black")
+
+minetest.register_alias("mapgen_dirt","comboblock:slab_orange_onc_slab_orange")
+
+minetest.register_alias("mapgen_dirt_with_grass","comboblock:slab_green_onc_slab_orange")
+
+minetest.register_alias("mapgen_sand","comboblock:slab_yellow_onc_slab_yellow")
+
+minetest.register_alias("mapgen_water_source","water:blue_water_source")
+
+minetest.register_alias("mapgen_river_water_source","water:blue_water_source")
+
+minetest.register_alias("mapgen_lava_source","water:red_water_source")
+
+minetest.register_alias("mapgen_gravel","comboblock:slab_black_onc_slab_black")
+
+minetest.register_alias("mapgen_desert_stone","comboblock:slab_black_onc_slab_black")
+
+minetest.register_alias("mapgen_desert_sand","comboblock:slab_yellow_onc_slab_yellow")
+
+minetest.register_alias("mapgen_dirt_with_snow","comboblock:slab_white_onc_slab_orange")
+
+minetest.register_alias("mapgen_snowblock","comboblock:slab_white_onc_slab_white")
+
+minetest.register_alias("mapgen_snow","comboblock:slab_white_onc_slab_white")
+
+minetest.register_alias("mapgen_ice","comboblock:slab_blue_onc_slab_blue")
+
+minetest.register_alias("mapgen_sandstone","comboblock:slab_orange_onc_slab_orange")
 
 -- Flora
 
@@ -52,14 +66,14 @@ function default.register_biomes(upper_limit)
 		name = "white",
 		node_top = "comboblock:slab_white_onc_slab_orange",
 		depth_top = 1,
-		node_filler = "color:orange",
+		node_filler = "comboblock:slab_orange_onc_slab_orange",
 		depth_filler = 1,
-		--node_stone = "",
+		node_stone = "comboblock:slab_black_onc_slab_black",
 		--node_water_top = "",
 		--depth_water_top = ,
 		--node_water = "",
 		--node_river_water = "",
-		node_riverbed = "color:yellow",
+		node_riverbed = "comboblock:slab_yellow_onc_slab_yellow",
 		depth_riverbed = 2,
 		y_min = 5,
 		y_max = upper_limit,
@@ -70,16 +84,16 @@ function default.register_biomes(upper_limit)
 	minetest.register_biome({
 		name = "white_ocean",
 		--node_dust = "",
-		node_top = "color:yellow",
+		node_top = "comboblock:slab_yellow_onc_slab_yellow",
 		depth_top = 1,
-		node_filler = "color:yellow",
+		node_filler = "comboblock:slab_yellow_onc_slab_yellow",
 		depth_filler = 3,
-		--node_stone = "",
+		node_stone = "comboblock:slab_black_onc_slab_black",
 		 node_water_top = "water:blue_water_source",
 		depth_water_top = 10,
 		--node_water = "",
 		--node_river_water = "",
-		node_riverbed = "color:yellow",
+		node_riverbed = "comboblock:slab_yellow_onc_slab_yellow",
 		depth_riverbed = 2,
 		y_min = -112,
 		y_max = 4,
@@ -94,14 +108,14 @@ function default.register_biomes(upper_limit)
 		--node_dust = "",
 		node_top = "comboblock:slab_green_onc_slab_orange",
 		depth_top = 1,
-		node_filler = "color:orange",
+		node_filler = "comboblock:slab_orange_onc_slab_orange",
 		depth_filler = 1,
-		--node_stone = "",
+		node_stone = "comboblock:slab_black_onc_slab_black",
 		--node_water_top = "",
 		--depth_water_top = ,
 		--node_water = "",
 		--node_river_water = "",
-		node_riverbed = "color:yellow",
+		node_riverbed = "comboblock:slab_yellow_onc_slab_yellow",
 		depth_riverbed = 2,
 		y_min = 6,
 		y_max = upper_limit,
@@ -112,16 +126,16 @@ function default.register_biomes(upper_limit)
 	minetest.register_biome({
 		name = "green_ocean",
 		--node_dust = "",
-		node_top = "color:yellow",
+		node_top = "comboblock:slab_yellow_onc_slab_yellow",
 		depth_top = 1,
-		node_filler = "color:yellow",
+		node_filler = "comboblock:slab_yellow_onc_slab_yellow",
 		depth_filler = 3,
-		--node_stone = "",
+		node_stone = "comboblock:slab_black_onc_slab_black",
 		 node_water_top = "water:blue_water_source",
 		depth_water_top = 10,
 		--node_water = "",
 		--node_river_water = "",
-		node_riverbed = "color:yellow",
+		node_riverbed = "comboblock:slab_yellow_onc_slab_yellow",
 		depth_riverbed = 2,
 		y_min = -112,
 		y_max = 4,
@@ -134,16 +148,16 @@ function default.register_biomes(upper_limit)
 	minetest.register_biome({
 		name = "yellow",
 		--node_dust = "",
-		node_top = "color:yellow",
+		node_top = "comboblock:slab_yellow_onc_slab_yellow",
 		depth_top = 1,
-		node_filler = "color:yellow",
+		node_filler = "comboblock:slab_yellow_onc_slab_yellow",
 		depth_filler = 1,
-		node_stone = "color:orange",
+		node_stone = "comboblock:slab_orange_onc_slab_orange",
 		--node_water_top = "" ,
 		--depth_water_top = ,
 		--node_water = "",
 		--node_river_water = "",
-		node_riverbed = "color:yellow",
+		node_riverbed = "comboblock:slab_yellow_onc_slab_yellow",
 		depth_riverbed = 2,
 		y_min = 5,
 		y_max = upper_limit,
@@ -154,16 +168,16 @@ function default.register_biomes(upper_limit)
 	minetest.register_biome({
 		name = "yellow_ocean",
 		--node_dust = "",
-		node_top = "color:yellow",
+		node_top = "comboblock:slab_yellow_onc_slab_yellow",
 		depth_top = 1,
-		node_filler = "color:yellow",
+		node_filler = "comboblock:slab_yellow_onc_slab_yellow",
 		depth_filler = 3,
-		node_stone = "color:orange",
+		node_stone = "comboblock:slab_orange_onc_slab_orange",
 	 node_water_top = "water:blue_water_source",
 		depth_water_top = 10,
 		--node_water = "",
 		--node_river_water = "",
-		node_riverbed = "color:yellow",
+		node_riverbed = "comboblock:slab_yellow_onc_slab_yellow",
 		depth_riverbed = 2,
 		y_min = -112,
 		y_max = 4,
@@ -282,7 +296,7 @@ minetest.register_decoration({
 
 minetest.register_decoration({
 		deco_type = "simple",
-		place_on = {"color:yellow"},
+		place_on = {"comboblock:slab_yellow_onc_slab_yellow"},
 		sidelen = 16,
 		noise_params = {
 			offset = 0,
@@ -300,7 +314,7 @@ minetest.register_decoration({
 
 	minetest.register_decoration({
 		deco_type = "simple",
-		place_on = {"color:yellow"},
+		place_on = {"comboblock:slab_yellow_onc_slab_yellow"},
 		sidelen = 16,
 		noise_params = {
 			offset = 0,
