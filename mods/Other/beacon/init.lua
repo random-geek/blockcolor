@@ -46,7 +46,7 @@ minetest.register_node("beacon:off" .. color , {
 	drawtype = "mesh",
  light_source = 13,
 	mesh = "block_in_block.obj",
-	tiles = {"color_white.png^[colorize:#"..colour..":70", "default_glass.png"},
+	tiles = {"color_white.png^[colorize:#"..colour..":70", "whiteglass.png"},
 	paramtype = "light",
  paramtype = "facedir",
 	is_ground_content = false,
