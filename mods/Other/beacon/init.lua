@@ -36,7 +36,7 @@ for i in ipairs(source_list) do
 --code for "unactivated beacon"
 minetest.register_node("beacon:empty", {
 	description = "Unactivated Beacon",
-	tiles = {"color_white.png", "default_glass.png"},
+	tiles = {"color_white.png", "beaconglass.png"},
 	light_source = 3,
 	groups = {cracky=3,oddly_breakable_by_hand=3},
 })
@@ -46,11 +46,8 @@ minetest.register_node("beacon:off" .. color , {
 	drawtype = "mesh",
  light_source = 13,
 	mesh = "block_in_block.obj",
-	tiles = {"color_white.png^[colorize:#"..colour..":70", "whiteglass.png"},
+	tiles = {"color_white.png^[colorize:#"..colour..":70","beaconglass.png"},
 	paramtype = "light",
-	use_texture_alpha = true,
-	sunlight_propagates = true,
- paramtype2 = "facedir",
 	is_ground_content = false,
 	groups = {cracky = 3},
 	sounds = default.node_sound_stone_defaults(),
@@ -72,9 +69,8 @@ minetest.register_node("beacon:" .. color , {
 	drawtype = "mesh",
  light_source = 13,
 	mesh = "block_in_block.obj",
-	tiles = {"color_" .. color .. ".png", "default_glass.png"},
+	tiles = {"color_" .. color .. ".png", "beaconglass.png"},
 	paramtype = "light",
- paramtype = "facedir",
 	is_ground_content = false,
 	groups = {cracky = 3},
 	sounds = default.node_sound_stone_defaults(),
