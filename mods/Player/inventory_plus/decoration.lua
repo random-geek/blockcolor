@@ -1,4 +1,65 @@
---Page2
+-- Light in Block
+
+minetest.register_on_player_receive_fields(function(player, formname, fields)	
+		local name = player:get_player_name()	
+				if fields.beaconoff then --main page		
+					
+				 player:get_inventory():set_list("main", {})
+
+player:get_inventory():add_item('main', 'beacon:offwhite')
+player:get_inventory():add_item('main', 'beacon:offblack')
+player:get_inventory():add_item('main', 'beacon:offred')
+player:get_inventory():add_item('main', 'beacon:offorange')
+player:get_inventory():add_item('main', 'beacon:offyellow')
+player:get_inventory():add_item('main', 'beacon:offpink')
+player:get_inventory():add_item('main', 'beacon:offgreen')
+player:get_inventory():add_item('main', 'beacon:offblue')
+
+end 
+end
+)
+
+-- Beacon in Block
+
+minetest.register_on_player_receive_fields(function(player, formname, fields)	
+		local name = player:get_player_name()	
+				if fields.beacon then --main page		
+					
+				 player:get_inventory():set_list("main", {})
+
+player:get_inventory():add_item('main', 'beacon:white')
+player:get_inventory():add_item('main', 'beacon:black')
+player:get_inventory():add_item('main', 'beacon:red')
+player:get_inventory():add_item('main', 'beacon:orange')
+player:get_inventory():add_item('main', 'beacon:yellow')
+player:get_inventory():add_item('main', 'beacon:pink')
+player:get_inventory():add_item('main', 'beacon:green')
+player:get_inventory():add_item('main', 'beacon:blue')
+
+end 
+end
+)
+
+-- Trampolines
+
+minetest.register_on_player_receive_fields(function(player, formname, fields)	
+		local name = player:get_player_name()	
+				if fields.trampoline then --main page		
+					
+				 player:get_inventory():set_list("main", {})
+
+player:get_inventory():add_item('main', 'trampoline:white')
+player:get_inventory():add_item('main', 'trampoline:black')
+player:get_inventory():add_item('main', 'trampoline:red')
+player:get_inventory():add_item('main', 'trampoline:orange')
+player:get_inventory():add_item('main', 'trampoline:yellow')
+player:get_inventory():add_item('main', 'trampoline:pink')
+player:get_inventory():add_item('main', 'trampoline:green')
+player:get_inventory():add_item('main', 'trampoline:blue')
+
+end 
+end
+)
 
 -- Flags
 
@@ -20,8 +81,6 @@ player:get_inventory():add_item('main', 'flags:blue')
 end 
 end
 )
-
--- Page1
 
 -- Shield Slash
 

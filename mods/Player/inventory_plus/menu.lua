@@ -203,7 +203,9 @@ if page == "furnitures" then
 .. "image_button_exit[3,4.5;1,1;gui_hotbar_selected.png^shieldcross.png;shieldcross;]"
 .. "image_button_exit[4,4.5;1,1;gui_hotbar_selected.png^shieldslash.png;shieldslash;]"
 .. "image_button_exit[5,4.5;1,1;gui_hotbar_selected.png^shieldchevron.png;shieldchevron;]"
--- .. "image_button[7,4.5;1,1;gui_hotbar_selected.png^droite.png;furnitures2;]"
+.."image_button_exit[6,4.5;1,1;gui_hotbar_selected.png^trampo.png;trampoline;]"
+
+.. "image_button[7,4.5;1,1;gui_hotbar_selected.png^droite.png;furnitures2;]"
 
  .. "image_button[0,6.5;1,1;gui_hotbar_selected.png^gauche.png;main;]"
  .. "image_button_exit[1,6.5;1,1;gui_hotbar_selected.png^rotate.png;rotate;]"
@@ -211,6 +213,31 @@ if page == "furnitures" then
  .. ""
 
 	end
+
+-- furnitures page2
+
+	if page == "furnitures2" then
+
+		local inv = player:get_inventory() or nil
+
+		if not inv then
+			print ("NO INVENTORY FOUND")
+			return
+		end
+
+		 formspec = formspec
+
+.. "image_button_exit[0,0.5;1,1;gui_hotbar_selected.png^beaconon.png;beacon;]"
+.. "image_button_exit[1,0.5;1,1;gui_hotbar_selected.png^beaconoff.png;beaconoff;]"
+ 
+.. "image_button[0,6.5;1,1;gui_hotbar_selected.png^gauche.png;furnitures;]"
+.. "image_button_exit[1,6.5;1,1;gui_hotbar_selected.png^rotate.png;rotate;]"
+.. "image_button_exit[2,6.5;1,1;gui_hotbar_selected.png^nones.png;none;]"
+
+.. ""
+
+	end
+
 
 -- Cars 
 
@@ -359,6 +386,14 @@ if fields.nodes2 then
 
 		inventory_plus.set_inventory_formspec(player,
 			inventory_plus.get_formspec(player, "furnitures"))
+
+		return
+	end
+
+if fields.furnitures2 then
+
+		inventory_plus.set_inventory_formspec(player,
+			inventory_plus.get_formspec(player, "furnitures2"))
 
 		return
 	end

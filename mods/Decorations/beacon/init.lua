@@ -3,7 +3,6 @@
 --load other scripts
 dofile(minetest.get_modpath("beacon").."/beaminit.lua")
 dofile(minetest.get_modpath("beacon").."/beamgen.lua")
-dofile(minetest.get_modpath("beacon").."/crafts.lua")
 
 color1 = minetest.setting_get("color1") or "292421"
 color2 = minetest.setting_get("color2") or "0000FF"
@@ -15,28 +14,28 @@ color7 = minetest.setting_get("color7") or "FFFF00"
 color8 = minetest.setting_get("color8") or "FF69B4"
 
 local source_list = {
--- 	{"black", "Color1", color1, 40, 36, 33}, 
-	  {"blue", "Color2", color2, 0, 0, 255},
-	  {"green", "Color3", color3, 0, 255, 0}, 
---	 {"white", "Color4", color4, 245, 245, 245}, 
--- 	{"orange", "Color5", color5, 255, 97, 3}, 
-   	{"red", "Color6", color6, 255, 0, 0}, 
--- 	{"yellow", "Color7", color7, 255, 255, 0}, 
--- 	{"pink", "Color8", color8, 255, 105, 180}
+   	{"black", "Color1", color1}, 
+	  {"blue", "Color2", color2},
+	  {"green", "Color3", color3}, 
+  	 {"white", "Color4", color4}, 
+   	{"orange", "Color5", color5}, 
+   	{"red", "Color6", color6}, 
+   	{"yellow", "Color7", color7}, 
+   	{"pink", "Color8", color8}
 }
 
 for i in ipairs(source_list) do
 	local color = source_list[i][1]
 	local desc = source_list[i][2]
 	local colour = source_list[i][3]
-	local red = source_list[i][4]
-	local green = source_list[i][5]
-	local blue = source_list[i][6]
 
 --code for "unactivated beacon"
 minetest.register_node("beacon:empty", {
 	description = "Unactivated Beacon",
-	tiles = {"color_white.png", "beaconglass.png"},
+ wield_image = "color_handwhite.png",
+	wield_scale = {x=1,y=1,z=0.5},
+ inventory_image = 'beaconoff.png^[colorize:#'..colour..':70',
+	tiles = {"color_white.png", "default_glass.png"},
 	light_source = 3,
 	groups = {cracky=3,oddly_breakable_by_hand=3},
 })
@@ -46,7 +45,10 @@ minetest.register_node("beacon:off" .. color , {
 	drawtype = "mesh",
  light_source = 13,
 	mesh = "block_in_block.obj",
-	tiles = {"color_white.png^[colorize:#"..colour..":70","beaconglass.png"},
+ wield_image = "color_hand" .. name .. ".png",
+	wield_scale = {x=1,y=1,z=0.5},
+ inventory_image = 'beaconoff.png^[colorize:#'..colour..':70',
+	tiles = {"color_white.png^[colorize:#"..colour..":70","default_glass.png"},
 	paramtype = "light",
 	is_ground_content = false,
 	groups = {cracky = 3},
@@ -69,7 +71,10 @@ minetest.register_node("beacon:" .. color , {
 	drawtype = "mesh",
  light_source = 13,
 	mesh = "block_in_block.obj",
-	tiles = {"color_" .. color .. ".png", "beaconglass.png"},
+ wield_image = "color_hand" .. name .. ".png",
+	wield_scale = {x=1,y=1,z=0.5},
+ inventory_image = 'beaconon.png^[colorize:#'..colour..':70',
+	tiles = {"color_white.png^[colorize:#"..colour..":70", "default_glass.png"},
 	paramtype = "light",
 	is_ground_content = false,
 	groups = {cracky = 3},

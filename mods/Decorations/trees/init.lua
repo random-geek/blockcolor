@@ -26,6 +26,39 @@ for i in ipairs(source_list) do
 	local green = source_list[i][5]
 	local blue = source_list[i][6]
 
+minetest.register_node("trees:big_cactus_" .. name, {
+		description = desc .. " color",
+ 
+  paramtype = "light",
+  drawtype = "mesh",
+  	mesh = "cactus.obj",
+visual_scale = 4,
+wield_image = "color_hand" .. name .. ".png",
+wield_scale = {x=1,y=1,z=0.5},
+inventory_image = "color_white.png^[colorize:#"..colour..":70",
+
+tiles = {
+"color_white.png^[colorize:#"..colour..":70",
+},
+
+selection_box = {
+type = "fixed",
+fixed = { 0.40, -0.5, 0, -4.75, 13, -5.25},
+},
+
+collision_box = {
+type = "fixed",
+fixed = { 0.40, -0.5, 0, -4.75, 13, -5.25},
+},
+		
+		is_ground_content = true,
+		groups = {snappy = 2, choppy = 2, wool = 2},
+		sounds = default.node_sound_defaults(),
+	  oddly_breakable_by_hand = 1,
+	  dig_immediate = 3,
+		
+			 	})
+
 minetest.register_node("trees:big_" .. name, {
 		description = desc .. " color",
  
