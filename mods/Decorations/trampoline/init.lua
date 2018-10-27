@@ -33,7 +33,7 @@ for i in ipairs(source_list) do
 	minetest.register_node("trampoline:"..color, {
 		description = desc.."Trampoline",
    inventory_image = 'trampo.png^[colorize:#'..colour..':70',
-   wield_image = "color_hand" .. name .. ".png",
+   wield_image = "color_hand" .. color .. ".png",
 		wield_scale = {x=1,y=1,z=0.5},
 		tiles = {"trampoline.png^[colorize:#"..colour..":70", "trampoline.png^[colorize:#"..colour..":70", "trampoline_sides.png^[colorize:#"..colour..":70"},
 		groups = {cracky=3, oddly_breakable_by_hand=1, fall_damage_add_percent=-100, bouncy=99},
