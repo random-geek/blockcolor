@@ -1,15 +1,19 @@
 ----------------------------------------------------------------
 
-General Conditions of Use (GCU).
-
-(only for BlockColor'Server : Minetestserver.mine.bz 30005)
+BlockColor : A Creative Game with 8 Colors For Minetest Engine.
 
 ----------------------------------------------------------------
 
-Hello, This is Creative'Server with BlockColor'Game. Else You not protect your Build with Area, the build is destroy when Disconnect (autorollback by Nigel). I can so remove Area(s), else builds are bad.
+Forum : https://forum.minetest.net/viewtopic.php?t=20445
 
-BlockColor is a Server for Builders for create a beautiful Map and World. I can use so builds for Mapgen for BlockColor, i can use your name in server for credit you with license Cc By Sa for Builds.
+Download : https://content.minetest.net/packages/Chiantos/blockcolor/
 
-For Communicate, use English or French, please. Respect Players, not use bad language with others players. Not Destroy Builds, this is only Grant for Admins and Else Player Disconnect without protect'Builds.
+Discord : https://discord.gg/SCC2epQ
+
+Twitter : https://mobile.twitter.com/LeChiantos
 
 --------------------------------------------------------------------
+
+Protect yours Builds with areas commands :
+
+/area_pos set | /protect yourname yourname
