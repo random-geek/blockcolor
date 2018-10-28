@@ -15,6 +15,9 @@ player:get_inventory():add_item('main', 'mobs_animal:babypig')
 player:get_inventory():add_item('main', 'mobs_animal:adultalien')
 player:get_inventory():add_item('main', 'mobs_animal:babyalien')
 
+player:get_inventory():add_item('main', 'mobs:lasso')
+player:get_inventory():add_item('main', 'mobs:nametag')
+
 end 
 end
 )

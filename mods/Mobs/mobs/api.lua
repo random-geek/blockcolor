@@ -3673,22 +3673,15 @@ function mobs:capture_mob(self, clicker, chance_hand, chance_net, chance_lasso, 
 
 			chance = chance_net
 
-			tool:add_wear(4000) -- 17 uses
-
 			clicker:set_wielded_item(tool)
 
 		elseif tool:get_name() == "mobs:lasso" then
 
 			chance = chance_lasso
 
-			tool:add_wear(650) -- 100 uses
-
 			clicker:set_wielded_item(tool)
 
 		end
-
-		-- calculate chance.. add to inventory if successful?
-		if chance > 0 and random(1, 100) <= chance then
 
 			-- default mob egg
 			local new_stack = ItemStack(mobname)
@@ -3727,11 +3720,6 @@ function mobs:capture_mob(self, clicker, chance_hand, chance_net, chance_lasso, 
 
 			mob_sound(self, "default_place_node_hard")
 
-		elseif chance ~= 0 then
-			minetest.chat_send_player(name, S("Missed!"))
-
-			mob_sound(self, "mobs_swing")
-		end
 	end
 
 	return true
