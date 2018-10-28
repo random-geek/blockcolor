@@ -17,6 +17,7 @@ stepheight = 0.6,
 	hp_max = 0,
 	armor = 0,
 	visual = "mesh",
+ collisionbox = {-0.4, -0.45, -0.4, 0.4, 0.45, 0.4},
 	mesh = "mobs_baby.b3d",
 	textures = {
 		{"mobs_panda.png"},
